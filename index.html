@@ -60,12 +60,13 @@
 
     h1 {
       font-size: 2em;
-      color: #000;
-      background-color: rgba(245, 220, 245, 0.85);
+      color: green;
+      text-align: left;
+      background-color: rgba(245, 220, 226, 0.85);
       text-align: center;
       border-radius: 10px;
       margin-bottom: 35px;
-      max-width: 100%;
+      max-width: 45%;
       width: auto;
       box-sizing: border-box;
     }
@@ -110,17 +111,36 @@
       height: 200px;
     }
 
-    a::after {
-      content: "(link)";
-      font-size: 0.6em;
-      color: #555;
+    a:hover {
+    
+      font-size: 1.4em;
+      color: green;
+    }
+
+    #menu {
+      list-style: none;
+      display: flex;
+    }
+
+    #menu li {
+      margin-right: 20px;
+      background-color: rgba(245, 220, 245, 0.850);
+      border-radius: 15px;
     }
   </style>
 </head>
 <body>
   <main>
-    <article>
 
+    
+    <article>
+      <nav>
+        <ul id="menu">
+          <li><a href="index.html" target="_blank">Início</a></li>
+          <li><a href="https://instagram.com/igoramericano" target="_blank">Contato</a></li>
+          <li><a href="https://github.com/igoramericano" target="_blank">Portfólio</a></li>
+        </ul>
+      </nav>
       <h1>Sobre mim</h1>
       <div class="p1">
         <p>Olá! Me chamo <strong>Igor Americano</strong> e estou em uma jornada contínua de aprendizado e evolução no universo da <strong>programação</strong>. Meu foco principal está no <strong>desenvolvimento de sistemas de segurança</strong>, e sigo uma rotina de estudos intensa de segunda a sexta-feira.</p>
