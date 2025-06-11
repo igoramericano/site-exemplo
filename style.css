@@ -3,6 +3,25 @@
 /* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Sriracha&display=swap');
 
+/* Fundo só até metade da página */
+
+
+body::before {
+    content: "";
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 28vh;
+    background: url(pexels.jpg) no-repeat center center / cover;
+    z-index: -1;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
 /* Reset e configurações globais */
 * {
   margin: 0;
@@ -36,6 +55,7 @@ h1 {
   font-size: 2.2em;
   color: green;
   text-align: center;
+  
   background-color: rgba(245, 220, 226, 0.85);
   border-radius: 10px;
   margin-bottom: 35px;
@@ -104,8 +124,27 @@ nav {
   padding: 10px;
   margin: 10px;
   justify-content: center;
-  
- 
+}
+
+ul {
+
+}
+a.whatsapp {
+    border: 2px solid #25D366;
+    border-radius: 50%;
+    
+    padding: 15px 18px;
+
+    background: white;
+    color: #25D366;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5em;
+    box-shadow: 0 2px 8px #25d36633;
 }
 
 nav > a {
@@ -126,16 +165,23 @@ nav > a:hover {
 }
 
 /* Lista de menu */
-#menu {
+.menu {
   list-style: none;
   display: flex;
 }
 
-#menu li {
+.menu li {
   margin-right: 20px;
   background-color: rgba(245, 220, 245, 0.85);
   border-radius: 15px;
 }
+
+ul {
+    text-align: center;
+    text-decoration: none;
+}
+
+
 
 /* Footer */
 footer {
@@ -157,7 +203,7 @@ footer {
 
 /* Hover geral para links */
 a:hover {
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: green;
 }
 

@@ -9,9 +9,9 @@
 <body>
   <main>
 
-    <ul>
+    <ul class="menu1">
       <li>
-        <a href="https://wa.me/71981628334">WhatsApp</a>
+        <a href="https://wa.me/71981628334" class="whatsapp">WhatsApp</a>
       </li>
     </ul>
     
@@ -47,8 +47,7 @@
         <p>site desenvolvido por Igor Americano, todos os direitos reservados.</p>
       </footer>
       <nav>
-        <ul id="menu">
-
+        <ul class="menu">
           <li><a href="https://instagram.com/igoramericano" target="_blank">Instagram</a></li>
           <li><a href="https://wa.me/71981628334" target="_blank" class="whatsapp-button">📱 Fale comigo no WhatsApp</a></li>
           <li><a href="https://github.com/igoramericano" target="_blank">GitHub</a></li>
@@ -58,3 +57,15 @@
   </main>
 </body>
 </html>
+
+
+<script>
+  const fotos = document.querySelectorAll('.foto');
+  let index = 0;
+  
+  setInterval(() => {
+    fotos[index].classList.remove('ativa');
+    index = (index + 1) % fotos.length;
+    fotos[index].classList.add('ativa');
+  }, 3000); // troca a cada 3 segundos
+</script>
